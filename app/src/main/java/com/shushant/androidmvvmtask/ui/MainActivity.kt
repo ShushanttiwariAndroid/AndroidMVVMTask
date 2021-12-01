@@ -15,7 +15,7 @@ import dagger.hilt.android.AndroidEntryPoint
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     private var _binding: ActivityMainBinding? = null
-    private val viewModel: MainViewModel by viewModels()
+     val viewModel: MainViewModel by viewModels()
     private val sandboxAdapter by lazy { SandboxAdapter() }
 
     override fun onCreate(savedInstanceState: Bundle?) {
